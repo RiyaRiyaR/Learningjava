@@ -1,32 +1,34 @@
 package forLoop;
 
-import java.io.InputStream;
 import java.util.Scanner;
 
 public class LoginAccount {
 
-	String username;
+	String userId;
 	String password;
-	int count;
-	Scanner sc= new Scanner(System.in);
+	int maxattempts;
+Scanner sc= new Scanner(System.in);
 	void accountlogin() {
 		
-		
-		while(count<3) {
-			System.out.println("Enter a username"+username);
-			username= sc.next();
+		//count= chancesTologin;
+		while (maxattempts<3){
+			System.out.println("Enter a username" +userId);
+			userId = sc.next();
+			
 			System.out.println("enter password"+password);
 			password= sc.next();
-		if ("pivotAdmin".equals(username) && "Admin123".equals(password)) {
-			System.out.println("You are logged in to the application");
+
+			if ("pivotAdmin".equals(userId) && "Admin123" .equals(password) ) {
+				System.out.println("You are logged in to the application");
+			}
+			else  {
+
+				System.out.println("Incorrect User id or password.Try again");
+				maxattempts++;
+				
 		}
-		else  {
-			System.out.println("Incorrect User id or password.Try again");
-			count++;
-			
 		}
-		}
-		if (count>=3);
+		if (maxattempts==3);
 		
 			System.out.println("Account locked");
 		

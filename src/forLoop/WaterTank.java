@@ -1,17 +1,19 @@
 package forLoop;
 
 public class WaterTank {
-	
+	int tankCapacity;
+	int bucketCapacity;
+	int breakpoint;
+
 	void waterTankFilled() {
-		int WaterInsideTank = 0 ;
-		for(int i=0; i<10;i++) {
-			System.out.println("no. of buckets filled inside"+i);
-		WaterInsideTank+=10l;
-		System.out.println("total water inside: " +WaterInsideTank +"litres");
-		if(WaterInsideTank>100l) {
-			System.out.println("tank is overflowing");
-			break;
-		}
+		int WaterInsideTank = 0;
+		
+		for (tankCapacity = 0; tankCapacity < breakpoint; tankCapacity+=bucketCapacity) {
+			System.out.println("water filled inside" + tankCapacity);
+			if (WaterInsideTank > breakpoint) {
+				System.out.println("tank is overflowing");
+				break;
+			}
 		}
 	}
 

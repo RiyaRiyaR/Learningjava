@@ -6,6 +6,9 @@ public class MainWaterTank {
 		// TODO Auto-generated method stub
 
 		WaterTank waterTank= new WaterTank();
+		waterTank.breakpoint=95;
+		waterTank.bucketCapacity=10;
+		waterTank.tankCapacity=100;
 		waterTank.waterTankFilled();
 	}
 

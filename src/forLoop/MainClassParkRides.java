@@ -6,6 +6,7 @@ public class MainClassParkRides {
 		// TODO Auto-generated method stub
 
 		ParkRides parkRides= new ParkRides();
+	    
 		parkRides.allowedToGetRides();
 	}
 
