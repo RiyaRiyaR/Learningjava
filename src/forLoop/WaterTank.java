@@ -7,8 +7,8 @@ public class WaterTank {
 
 	void waterTankFilled() {
 		int WaterInsideTank = 0;
-		
-		for (tankCapacity = 0; tankCapacity < breakpoint; tankCapacity+=bucketCapacity) {
+
+		for (tankCapacity = 0; tankCapacity < breakpoint; tankCapacity += bucketCapacity) {
 			System.out.println("water filled inside" + tankCapacity);
 			if (WaterInsideTank > breakpoint) {
 				System.out.println("tank is overflowing");
